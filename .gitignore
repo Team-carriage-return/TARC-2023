@@ -1,0 +1,11 @@
+# Ignore compiled files (.bin)
+build/
+bin/
+*.bin
+*.elf
+*.hex
+*.map
+
+# Assorted other ignores
+Temp/
+*.ignore
