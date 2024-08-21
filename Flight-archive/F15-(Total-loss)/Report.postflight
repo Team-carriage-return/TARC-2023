@@ -1,0 +1,16 @@
+=== Post Flight Report for F15 ===
+
+== Flight Info ==
+
+Weather: Unknown
+Apogee: Unknown
+Anomalies: The air brakes did not deploy on accent or decent, the best theory we have is that the battery we used, because the normal one was lost with F15, died before takeoff. Upon plugging in the battery for pre-flight, the battery was below 3.5v and caused an error. We charged the battery for 5 minutes, then proceeded with the launch. Launch occurred roughly 27 minutes later. In addition, the parachute did not deploy and resulted in a total loss. The best theory we have is that because the kevlar parachute coord on the payload module was too long, when the parachute charge went off, there was too much friction for a safe separation.
+
+== Flight Goals ==
+
+(From F13) Fix velocity est via differentiation (Using raw alt when diff to find velocity). Unknown due to no data
+(From F13) Determine if HPF, LPF, and complimentary filtering are necessary. Unknown due to no data
+(From F13 -- kinda) Test ACS code using velocity found via differentiation rather than integration, that controls air brakes for more accurate apogee est. Unknown due to no data, and battery dying before launch
+Fix issue with postflight not being created when commanded after a flight. Unknown due to loss of feather
+Use a buzzer for setup-delay warning and heartbeat on the launch pad. Failure, due to the buzzer not making a sound
+Determine if implementing a running average of velocity found via differentiation would be more accurate. Unknown due to no data

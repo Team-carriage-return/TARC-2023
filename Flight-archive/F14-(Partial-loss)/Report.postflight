@@ -1,0 +1,138 @@
+=== Post Flight Report for F14 ===
+
+== Flight Info ==
+
+Weather: 35 degrees F with 15 mph winds
+Apogee: 943 ft (PNUT) and 987.5 ft (BARO)
+Anomalies: Postflight report was not generated at the correct time, this could be fixed with a 2 sec delay after closing the other log file. It was discovered after the flight that multiple I2C errors occurred. The PWM board was discovered unplugged after the flight, and after looking at data an error occurred with the IMU. The IMU was outputting data as if it was unplugged, and thus lead to no state change during flight. In addition, one air brake sheered off just after parachute deployment.
+
+== Flight Goals ==
+
+Fix velocity est via differentiation.
+Determine if HPF, LPF, and complimentary filtering are necessary.
+Test initial ACS code, that controls air brakes. Failure due to state change not working.
+Test primitive DCS code, that turns on the DCS to 100% on decent. Not a fail nor a success. Code for this was tested on the ground, and determined to not work, thus the DCS did not turn on during decent (Ignoring the state change problem due to IMU I2C failure).
+
+== Variables ==
+
+Note: Variables are printed at the end of the flight.
+
+Meta
+buffer:
+Meta
+floatBuffer:  true
+---
+targetApogee: 259.79
+
+Serial debugging
+command:          post-flight
+commandArr:       post-flight
+commandFirstWord: post-flight
+---
+watchEnabled: false
+watchCommand:
+watchDelay:   100
+
+State machine
+state: 2
+---
+sBootUp:            1
+sAwaitingArming:    2
+sAwaitingLaunch:    3
+sPoweredAccent:     4
+sUnpoweredAccent:   5
+sParachuteHold:     6
+sDecent:            7
+sLandingHold:       8
+sLanded:            9
+sGeneralError:      10
+sSDError:           11
+sIMUError:          12
+sBAROError:         13
+sLowBatteryVoltage: 14
+---
+updateFreq:    1000
+lastUpdate:    6047
+offThisUpdate: true
+---
+launchTime:    0
+burnoutTime:   0
+apogeeTime:    0
+parachuteTime: 0
+touchdownTime: 0
+
+Logging
+file:         true
+filename:     Flight-log-0.csv
+postFilename: Flight-log-0.postflight
+flightNum:    0
+---
+flushFreq: 500
+lastFlush: 6085
+lastLog:   6326
+
+IMU
+lastAccelData: -9.267, 3.43, -10.147
+lastMagData:   51.680, 19.701, -8.973
+lastGyroData:  0.0, 0.13, 0.55
+lastTempData:  -203.0
+
+BARO
+seaLevelPress: 1013.250
+initAlt:       736.122
+maxAlt:        736.670
+
+Velocity est
+lastUpdate: 6326
+lastZAccel: -10.118
+lastAlt:    736.443
+---
+inte:     -23164780.0
+diff:     0.441
+velocity: 2.13
+---
+lastVarsSetup: true
+
+Apogee est
+rocketWetMass:         0.656
+burnoutSubtrahend:     0.36
+
+Cycle
+millis: 6695
+---
+accel:   -9.251, 3.93, -10.115
+mag:     51.680, 19.701, -8.973
+gyro:    0.1, 0.21, 0.32
+IMUTemp: -203.0
+---
+rawAccel:   -9.267, 3.43, -10.147
+rawMag:     51.680, 19.701, -8.973
+rawGyro:    0.0, 0.13, 0.55
+rawIMUTemp: -203.0
+---
+BAROTemp: 21.132
+press:    92785.609
+alt:      736.434
+---
+rawBAROTemp: 21.72
+rawPress:    92781.601
+rawAlt:      736.309
+
+Air brakes
+min:     120
+max:     460
+pins:    4, 5, 6, 7
+offsets: 0, 40, 30, 45
+---
+maxAngle:     65.0
+currentAngle: 0.0
+---
+Kp: 0.0
+Ki: 0.750
+Kd: 0.0
+---
+lastUpdate:  0
+lastError:   0.0
+cumulativeI: 0.0
+
+This is the last line.

@@ -1,0 +1,83 @@
+=== Post Flight Report for F10 ===
+
+== Flight Info ==
+
+Weather: Roughly 48 degrees F with 7mph winds
+Apogee: 464 ft (PNUT) & 465.8 ft (BARO)
+Anomalies: Post-flight report was not generated (Some variables in this file are incorrect because the file was generated after the fact). Air brakes opened under acceleration and to our knowledge did not open on decent.
+
+== Flight Goals ==
+
+Revision 2 hardware: SUCCESS due to stable flight.
+Air brakes opening on decent: FAILURE did not.
+Collect aerodynamic force with full air brakes: FAILURE due to velocity estimation problems specifically not differentiating correctly.
+
+== Variables ==
+
+Note: Variables are printed at the end of the flight.
+
+
+Meta
+buffer:
+Meta
+floatBuffer: true
+
+Serial debugging
+command:          post-flight
+commandArr:       post-flight
+commandFirstWord: post-flight
+watchEnabled:     false
+watchCommand:
+watchDelay:       100
+
+State machine
+state:         5
+launchTime:    0
+burnoutTime:   0
+apogeeTime:    0
+parachuteTime: 0
+touchdownTime: 0
+
+State LED
+updateFreq:    1000
+lastUpdate:    66336
+offThisUpdate: false
+
+Logging
+file:         true
+filename:     Flight-log-1.csv
+postFilename: Flight-log-1.postflight
+flightNum:    1
+flushFreq:    500
+lastFlush:    66337
+lastLog:      66432
+
+IMU
+No variables to print.
+
+BARO
+seaLevelPress: 1013.250
+initAlt:       918.363
+maxAlt:        0.0
+
+PWM
+abMin:     165
+abMax:     470
+abTarget:  470
+abPins:    4, 5, 6, 7
+abOffsets: 0, -35, 0, -10
+
+Velocity est
+lastInte:  66426.0, -13.794
+lastDiff:  66426.0, 918.414
+inte:      -901292.875
+diff:      0.0
+velocity:  1.914
+estBefore: true
+
+Apogee est
+rocketWetMass:         0.686
+burnoutSubtrahend:     0.36
+constantAirBrakeAngle: 60.0
+
+This is the last line.

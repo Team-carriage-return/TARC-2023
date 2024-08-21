@@ -1,0 +1,32 @@
+Post-flight log for TARC flight 4
+
+This section of the postflight report was filled out after the fact, before the second ACS presentation.
+
+Mission goals: Test air brakes, test bigger parachute. Both were successful, the booster and the payload landed close together.
+
+Serial debugging
+debugCommand:            post-flight
+debugCommandArr:         post-flight
+debugCommandFirstWord:   post-flight
+watchEnabled:            0watchCommand:
+watchDelay:              100
+State machine variables
+currentState:    21launchTime:      737375burnoutTime:     738501apogeeTime:      0parachuteTime:   0touchdownTime:   0
+State LED variables
+millisBetweenLEDUpdates: 1000lastLEDUpdateTime:       926898LEDsOffThisUpdate:       1
+Logging variables
+logFilename:             TARC-flight-2.log
+postFlightLogFilename:   TARC-flight-2.postflight
+logFlightNumber:         2tmpLoggingBuffer:        2
+millisBetweenLogFlushes: 500lastLogFlushTime:        927492
+IMU variables
+No variables to print.
+
+BARO variables
+BAROSeaLevelPressure:    1013.25initialAlt:              713.45
+Logging variables
+airBrakeMin: 210airBrakeMax: 5658, 9, 10, 11
+0, 0, 0, 13
+
+Orientation tracking variables
+quat:                1.00.00.00.0euler:               0.00.00.0actual:              0.00.00.0timeSinceLastUpdate: 702972

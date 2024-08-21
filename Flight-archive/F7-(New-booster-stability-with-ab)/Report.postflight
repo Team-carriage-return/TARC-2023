@@ -1,0 +1,11 @@
+Post flight report:
+Apogee for this flight was 588 ft as reported from the pnut and 593 as reported from the BARO.
+Mission goals (recovery, pnut deployment, and new flight batteries) were successful.
+Mission goals (booster stability with ab) was not successful.
+The egg did not survive after an inspection after this flight. It is unclear weather this is due to this flight or flight 6.
+This flight deployed airbrakes to 1/2 deployment.
+Weather is 35 deg F with 11 MPH winds.
+
+Noted anomalies:
+Code did not produce a postflight when it should have
+Rocket was dynamically unstable during accent

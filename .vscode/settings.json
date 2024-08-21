@@ -1,0 +1,36 @@
+{
+    "cSpell.words": [
+        "ACCELRANGE",
+        "Adafruit",
+        "airbrakes",
+        "BARO",
+        "bootup",
+        "gryo",
+        "GYROSCALE",
+        "Inte",
+        "linebreak",
+        "logln",
+        "MAGGAIN",
+        "millis",
+        "pnut",
+        "postflight",
+        "sprinf",
+        "TARC"
+    ],
+    "files.associations": {
+        "fstream": "cpp",
+        "array": "cpp",
+        "hash_map": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "ranges": "cpp",
+        "span": "cpp",
+        "valarray": "cpp"
+    }
+}

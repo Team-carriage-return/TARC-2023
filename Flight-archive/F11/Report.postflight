@@ -1,0 +1,82 @@
+=== Post Flight Report for F11 ===
+
+== Flight Info ==
+
+Weather: 44 degrees F with 7 mph winds (Best guess)
+Apogee: 479 ft (PNUT) and 485.8 ft (BARO)
+Anomalies: Air brakes opened under acceleration and did not open on decent.
+
+== Flight Goals ==
+
+Require a second acceleration trigger for launch detect: FAILURE due to airbrakes opening on accent
+Collect aerodynamic force with full air brakes: FAILURE due to velocity estimation not working and air brakes opening on accent
+
+== Variables ==
+
+Note: Variables are printed at the end of the flight.
+
+
+Meta
+buffer:
+Meta
+floatBuffer: true
+
+Serial debugging
+command:          post-flight
+commandArr:       post-flight
+commandFirstWord: post-flight
+watchEnabled:     false
+watchCommand:
+watchDelay:       100
+
+State machine
+state:         4
+launchTime:    583424
+burnoutTime:   583510
+apogeeTime:    587795
+parachuteTime: 592839
+touchdownTime: 592936
+
+State LED
+updateFreq:    1000
+lastUpdate:    841569
+offThisUpdate: true
+
+Logging
+file:         true
+filename:     Flight-log-0.csv
+postFilename: Flight-log-0.postflight
+flightNum:    0
+flushFreq:    500
+lastFlush:    841479
+lastLog:      841734
+
+IMU
+No variables to print.
+
+BARO
+seaLevelPress: 1013.250
+initAlt:       1855.158
+maxAlt:        1079.47
+
+PWM
+abMin:     165
+abMax:     470
+abTarget:  470
+abPins:    4, 5, 6, 7
+abOffsets: 0, -35, 0, -10
+
+Velocity est
+lastInte:  841728.0, -3.995
+lastDiff:  841728.0, 931.858
+inte:      -1912122.750
+diff:      0.4
+velocity:  2.712
+estBefore: true
+
+Apogee est
+rocketWetMass:         0.686
+burnoutSubtrahend:     0.36
+constantAirBrakeAngle: 60.0
+
+This is the last line.

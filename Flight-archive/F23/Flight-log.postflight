@@ -1,0 +1,152 @@
+=== Post Flight Report for F ===
+
+== Flight Info ==
+
+Weather: Include temp and wind
+Apogee: Include PNUT and BARO information
+Anomalies: Include any anomalies that occurred with this flight
+
+== Flight Goals ==
+
+List flight goals and outcomes
+
+== Variables ==
+
+Note: Variables are printed at the end of the flight.
+
+Meta
+buffer:       
+Meta
+floatBuffer:  true
+---
+targetApogee: 83.819
+
+Serial debugging
+command:          post-flight
+commandArr:       post-flight
+commandFirstWord: post-flight
+---
+watchEnabled: false
+watchCommand: 
+watchDelay:   100
+
+State machine
+state: 9
+---
+sBootUp:            1
+sAwaitingArming:    2
+sAwaitingLaunch:    3
+sPoweredAccent:     4
+sUnpoweredAccent:   5
+sParachuteHold:     6
+sDecent:            7
+sLandingHold:       8
+sLanded:            9
+sGeneralError:      10
+sSDError:           11
+sIMUError:          12
+sBAROError:         13
+sLowBatteryVoltage: 14
+---
+updateFreq:    1000
+lastUpdate:    800260
+offThisUpdate: false
+---
+launchTime:    544862
+burnoutTime:   545397
+apogeeTime:    548923
+parachuteTime: 551973
+touchdownTime: 552056
+
+Logging
+file:         true
+filename:     Flight-log-0.csv
+postFilename: Flight-log-0.postflight
+flightNum:    0
+---
+flushFreq: 500
+lastFlush: 800808
+lastLog:   800913
+
+IMU
+lastAccelData: -8.678, 0.100, -5.488
+lastMagData:   73.282, 0.701, 14.571
+lastGyroData:  0.38, 0.14, 0.47
+lastTempData:  -171.0
+
+BARO
+seaLevelPress: 1013.250
+initAlt:       785.127
+maxAlt:        887.471
+
+Velocity est
+lastUpdate: 800913
+lastZAccel: -5.668
+lastAlt:    787.289
+---
+inte:     -1533934976.0
+diff:     0.401
+velocity: 1.988
+---
+lastVarsSetup: true
+
+Apogee est
+rocketWetMass:         0.620
+burnoutSubtrahend:     0.18
+---
+lastEstApogee: 0.0
+
+Cycle
+millis: 800949
+---
+accel:   -8.520, 0.160, -5.594
+mag:     72.358, 0.336, 14.843
+gyro:    0.9, 0.33, 0.8
+IMUTemp: -171.0
+---
+rawAccel:   -8.678, 0.100, -5.488
+rawMag:     73.282, 0.701, 14.571
+rawGyro:    0.38, 0.14, 0.47
+rawIMUTemp: -171.0
+---
+BAROTemp: 18.995
+press:    92216.156
+alt:      787.557
+---
+rawBAROTemp: 18.989
+rawPress:    92219.304
+rawAlt:      787.815
+
+Air brakes
+min:     150
+max:     400
+pins:    4, 5, 6, 7
+offsets: 0, 5, 20, 20
+---
+maxAngle:      51.0
+currentAngle:  0.0
+targetAngle:   0.0
+startingAngle: 30.500
+---
+Kp: 0.0
+Ki: 3.0
+Kd: 0.0
+---
+lastUpdate:  545397
+lastError:   0.0
+cumulativeI: 0.0
+error:       0.0
+---
+useStaticAngle: true
+pwmTarget:      150
+
+Buzzer
+updateFreq:      1000
+heartbeatLength: 100
+heartbeatLength: 4096
+---
+pin:              15
+lastUpdate:       113434
+heartbeatPlaying: false
+
+This is the last line.

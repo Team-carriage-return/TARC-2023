@@ -1,0 +1,61 @@
+Post-flight log for TARC flight 5
+This file contains all variables and their values for future reference.
+Note: These values were stored in this file after the flight was completed.
+
+Post flight report:
+Apogee for this flight was 613.5ft.
+All mission goals (Testing a 3in diameter spill hole & data logging) were successful.
+This flight didn't use any air brakes.
+Best guess for weather is is 42 deg F with 8 MPH winds.
+
+Noted anomalies:
+An egg was missing and replaced with a 50 g weight prior to flight.
+Drift was higher than anticipated and resulted in the payload section landing in a tree and the booster section landing on a roof.
+
+Serial debugging
+debugCommand:            post-flight
+debugCommandArr:         post-flight
+debugCommandFirstWord:   post-flight
+watchEnabled:            0
+watchCommand:
+watchDelay:              100
+
+State machine variables
+currentState:    21
+launchTime:      1690788
+burnoutTime:     1692009
+apogeeTime:      0
+parachuteTime:   0
+touchdownTime:   0
+
+State LED variables
+millisBetweenLEDUpdates: 1000
+lastLEDUpdateTime:       2162148
+LEDsOffThisUpdate:       0
+
+Logging variables
+logFilename:             TARC-flight-1.csv
+postFlightLogFilename:   TARC-flight-1.postflight
+logFlightNumber:         1
+tmpLoggingBuffer:        1
+millisBetweenLogFlushes: 500
+lastLogFlushTime:        2161903
+
+IMU variables
+No variables to print.
+
+BARO variables
+BAROSeaLevelPressure:    1013.25
+initialAlt:              726.91
+
+Logging variables
+airBrakeMin:     210
+airBrakeMax:     565
+airBrakePins:    8, 9, 10, 11
+airBrakeOffsets: 0, -35, -10, 0
+
+Orientation tracking variables
+quat:                0.55, 0.35, 0.11, 0.74
+euler:               0.67, 0.-40, 1.70
+actual:              38.45, -23.-17, 97.85
+timeSinceLastUpdate: 330918
